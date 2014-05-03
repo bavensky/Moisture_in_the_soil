@@ -18,7 +18,7 @@
   void loop() 
   {
     moisture = analogRead(A0);      // Read analogpin 0
-    //Serial.print("Moisture = ");    
-    Serial.println(moisture);       // Sent moisture to bluetooth 
-    delay(3000);                    // Send data every 3 second
+    Serial.println(moisture);     
+    //Serial.println((moisture/1024.0)*100);   // Sent moisture to bluetooth 
+    delay(500);                            // Send data every 0.5 second
   }
